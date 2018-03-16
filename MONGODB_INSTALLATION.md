@@ -17,7 +17,7 @@ Execute o comando abaixo para verificar a versão do Homebrew:
 - Instalação do Homebrew - Cole o comando de instalação do Homebrew conforme descrito nesta [página](https://brew.sh/). Digite a senha caso solicitado e aguarde pelo final da instalação.
 - Instalação do MongoDB - Cole o seguinte comando no terminal e execute: `brew install mongodb`
 
-Crie um diretório para os dados do MonboDB - Este diretório é onde o MongoDB irá gravar os arquivos do banco de dados para a aplicação exemplo.
+Crie um diretório para os dados do MongoDB - Este diretório é onde o MongoDB irá gravar os arquivos do banco de dados para a aplicação exemplo.
 
 Cole o seguinte comando e execute no terminal: `mkdir -p ~/data/db`
 
@@ -41,7 +41,7 @@ Download - Abra a [página de downloads do MongoDB](https://www.mongodb.com/down
 
 Instalação - Abra o arquivo de instalação e siga os passos para instalação.
 
-Crie um diretório para os dados do MonboDB - Este diretório é onde o MongoDB irá gravar os arquivos do banco de dados para a aplicação exemplo.
+Crie um diretório para os dados do MongoDB - Este diretório é onde o MongoDB irá gravar os arquivos do banco de dados para a aplicação exemplo.
 
 Abra o powershell, cole e execute o seguinte comando: `md \data\db`
 
