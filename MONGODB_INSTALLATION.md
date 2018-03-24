@@ -2,7 +2,7 @@
 
 Iremos utilizar o MongoDB como banco de dados da aplicação exemplo deste curso. Ao final deste artigo você deve ser capaz de rodar o MongoDB em seu computador, em ambiente Mac ou Windows.
 
-> Caso seu computador notificar sobre permissões de fireweall, você de permitir.
+> Caso seu computador notificar sobre permissões de fireweall, você deve permitir.
 
 ## Instalacão no Mac OS X
 
