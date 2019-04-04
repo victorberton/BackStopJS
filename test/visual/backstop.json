@@ -34,7 +34,6 @@
       "url": "https://powertools.local:9002/yb2bacceleratorstorefront/",
       "readySelector": ".navigation__overflow",
       "clickSelector": ".nav__links--primary a",
-      "postInteractionWait": ".nav__links--primary a",
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
     },
@@ -43,7 +42,6 @@
       "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Power-Drills/c/1360",
       "readySelector": ".navigation__overflow",
       "clickSelector": ".js-more-facet-values-link",
-      "postInteractionWait": ".js-more-facet-values-link",
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
     },
@@ -52,7 +50,6 @@
       "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Power-Drills/c/1360",
       "readySelector": ".navigation__overflow",
       "clickSelector": ".facet__list__mark",
-      "postInteractionWait": ".facet__list__mark",
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
     },
@@ -145,7 +142,7 @@
       "requireSameDimensions": true
     },
     {
-        "label":"Recuperar Senha",
+      "label":"Recuperar Senha",
       "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/login",
       "readySelector": ".js-mainHeader",
       "clickSelector": ".forgotten-password a",
