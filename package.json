@@ -6,9 +6,11 @@
     "drop-db": "node ./bin/drop-database",
     "seed-db": "node ./bin/seed-database",
     "start": "node ./bin/www",
-    "test": "npm run test:mocha && npm run test:feature",
+    "test": "npm run test:visual",
     "test:mocha": "bin/mocha-test",
-    "test:feature": "bin/wdio-test"
+    "test:feature": "bin/wdio-test",
+    "test:visual": "cd test/visual && backstop test",
+    "test:visual:approve": "cd test/visual && backstop approve"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
@@ -20,6 +22,7 @@
     "morgan": "~1.8.1"
   },
   "devDependencies": {
+    "backstopjs": "^3.1.19",
     "chai": "^4.1.2",
     "eslint-config-google": "^0.9.1",
     "jsdom": "^9.12.0",

@@ -2,7 +2,7 @@
 
 ```
 label                    // [required] Tag saved with your reference images
-url                      // [required] The url of your app state
+url                       // [required] The url of your app state
 readySelector            // Wait until this selector exists before continuing.
 hideSelectors            // Array of selectors set to visibility: hidden
 removeSelectors          // Array of selectors set to display: none

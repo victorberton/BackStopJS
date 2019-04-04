@@ -1,0 +1,360 @@
+{
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1280,
+      "height": 1024
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    }
+  ],
+  "onBeforeScript": "chromy/onBefore.js",
+  "onReadyScript": "chromy/onReady.js",
+  "scenarios": [
+    {
+      "label": "Powertools",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/",
+      "readySelector": ".page-homepage",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Navbar - Cart",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/",
+      "readySelector": ".navigation__overflow",
+      "clickSelector": ".mini-cart-count",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Navbar - Power Drills",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/",
+      "readySelector": ".navigation__overflow",
+      "clickSelector": ".nav__links--primary a",
+      "postInteractionWait": ".nav__links--primary a",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Power Drills - Show More Brands...",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Power-Drills/c/1360",
+      "readySelector": ".navigation__overflow",
+      "clickSelector": ".js-more-facet-values-link",
+      "postInteractionWait": ".js-more-facet-values-link",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Power Drills - Filtered By Price",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Power-Drills/c/1360",
+      "readySelector": ".navigation__overflow",
+      "clickSelector": ".facet__list__mark",
+      "postInteractionWait": ".facet__list__mark",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Power Drills - Filtered By Brand - Bosch",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Power-Drills/c/1360?q=%3Arelevance%3Abrand%3Abrand_753&text=",
+      "readySelector": ".navigation__overflow",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Power Drills - Product Page",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Power-Drills/PSB-24-VE-2/p/3755201",
+      "readySelector": ".page-productDetails",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Power Drills - Product Page - Stock Future Availability",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Power-Drills/PSB-24-VE-2/p/3755201",
+      "readySelector": ".page-productDetails",
+      "clickSelector": ".futureStockLink",
+      "postInteractionWait": ".futureStockLink",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Navbar - Angle Grinders Filter",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Angle-Grinders/c/1595",
+      "readySelector": ".js-mainHeader",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Navbar - Screwdrivers Filter",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Screwdrivers/c/1593",
+      "readySelector": ".js-mainHeader",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Navbar - Sanders Filter",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Sanders/c/1596",
+      "readySelector": ".js-mainHeader",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Navbar - Measuring & Layout Tools Filter",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Measuring-%26-Layout-Tools/c/1358",
+      "readySelector": ".js-mainHeader",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Navbar - Hand Tools Filter",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/c/1355",
+      "readySelector": ".js-mainHeader",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Navbar - Safety Filter",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Safety/c/1800",
+      "readySelector": ".js-mainHeader",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Find a Store",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/store-finder",
+      "readySelector": ".js-mainHeader",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Login",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/login",
+      "readySelector": ".js-mainHeader",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Login - Error",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/login",
+      "readySelector": ".js-mainHeader",
+      "clickSelector": ".btn-block",
+      "postInteractionWait": ".btn-block",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Recover Password",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/login",
+      "readySelector": ".js-mainHeader",
+      "clickSelector": ".forgotten-password a",
+      "postInteractionWait": ".forgotten-password a",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Inserir Dados na Searchbar",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/",
+      "readySelector": ".navigation",
+      "keyPressSelectors":
+      [
+        {
+          "selector": "#js-site-search-input",
+          "keyPress": "power"
+        }
+      ],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Inserir Dados no Login",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/login",
+      "readySelector": ".login-section",
+      "keyPressSelectors":
+      [
+        {
+          "selector": "#j_username",
+          "keyPress": "admin@email.com"
+        },
+        {
+          "selector": "#j_password",
+          "keyPress": "password"
+        }
+      ],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Aumentar Quantidade",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Power-Drills/PSR-960/p/3755219#tabreview",
+      "readySelector": ".page-productDetails",
+      "clickSelector": ".js-qty-selector-plus",
+      "postInteractionWait": ".js-qty-selector-plus",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Voltar (Open Catalogue) - Navigation",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Safety/c/1800",
+      "readySelector": ".js-mainHeader",
+      "clickSelector": ".breadcrumb a",
+      "postInteractionWait": ".breadcrumb a",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Inserir Produto no Carrinho",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Angle-Grinders/c/1595",
+      "readySelector": ".product-item",
+      "clickSelector": ".glyphicon-shopping-cart",
+      "postInteractionWait": ".glyphicon-shopping-cart",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Paginar Lista de Screwdrivers",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Screwdrivers/c/1593?q=%3Arelevance&page=0",
+      "readySelector": ".row",
+      "clickSelector": ".glyphicon-chevron-right",
+      "postInteractionWait": ".glyphicon-chevron-right",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Remove Filter - Bosch x",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Sanders/c/1596?q=%3Arelevance%3Abrand%3Abrand_753",
+      "readySelector": ".row",
+      "clickSelector": ".glyphicon-remove",
+      "postInteractionWait": ".glyphicon-remove",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Carrinho",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/cart",
+      "readySelector": ".page-cartPage",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Ajuda Carrinho",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/cart",
+      "readySelector": ".page-cartPage",
+      "clickSelector": ".js-cart-help",
+      "postInteractionWait": ".js-cart-help",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Header Component",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/",
+      "readySelector": ".js-mainHeader",
+      "selectors": [".js-mainHeader"],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Footer Component",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/",
+      "readySelector": ".footer__top",
+      "selectors": [".footer__top"],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Banner Component",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/",
+      "readySelector": ".js-responsive-image",
+      "selectors": [".js-responsive-image"],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Login Para Checkout - Carrinho",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/login/checkout",
+      "readySelector": ".checkout-login",
+      "keyPressSelectors":
+      [
+        {
+          "selector": "#j_username",
+          "keyPress": "nome@email.com"
+        },
+        {
+          "selector": "#j_password",
+          "keyPress": "password"
+        }
+      ],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Menu Lateral",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Power-Drills/c/1360",
+      "readySelector": ".product-grid-left-refinements-slot",
+      "selectors": [".product-grid-left-refinements-slot"],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Order Form",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Safety/Footwear/Women%27s/Woman%27s-Rigmaster-Waterproof-Insulated-8%22/p/88116000/orderForm?",
+      "readySelector": ".js-mainHeader",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Esconder elemento",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/",
+      "readySelector": ".js-mainHeader",
+      "hideSelectors": [".navigation--top", ".no-margin"],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Remover elementos",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/",
+      "readySelector": ".js-mainHeader",
+      "removeSelectors": [".nav-location"],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label":"Realiza Login",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/login",
+      "readySelector": "#loginForm",
+      "keyPressSelectors":
+      [
+        {
+          "selector": "#j_username",
+          "keyPress": "asd@asd.com"
+        },
+        {
+          "selector": "#j_password",
+          "keyPress": "123123"
+        }
+      ],
+      "delay": 2000,
+      "clickSelector": ".btn-block",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "chrome",
+  "engineFlags": [],
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
