@@ -136,7 +136,7 @@
       "requireSameDimensions": true
     },
     {
-      "label":"Login - Error",
+      "label":"Login - Erro",
       "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/login",
       "readySelector": ".js-mainHeader",
       "clickSelector": ".btn-block",
@@ -145,7 +145,7 @@
       "requireSameDimensions": true
     },
     {
-      "label":"Recover Password",
+        "label":"Recupear Senha",
       "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/login",
       "readySelector": ".js-mainHeader",
       "clickSelector": ".forgotten-password a",
@@ -188,7 +188,7 @@
       "requireSameDimensions": true
     },
     {
-      "label":"Aumentar Quantidade",
+      "label":"Aumentar Quantidade do Produto",
       "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Power-Drills/PSR-960/p/3755219#tabreview",
       "readySelector": ".page-productDetails",
       "clickSelector": ".js-qty-selector-plus",
@@ -197,7 +197,7 @@
       "requireSameDimensions": true
     },
     {
-      "label":"Voltar (Open Catalogue) - Navigation",
+      "label":"Voltar (Open Catalogue) - Navigationbar",
       "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Safety/c/1800",
       "readySelector": ".js-mainHeader",
       "clickSelector": ".breadcrumb a",
@@ -215,7 +215,7 @@
       "requireSameDimensions": true
     },
     {
-      "label":"Paginar Lista de Screwdrivers",
+      "label":"Próxima Página da Lista de Screwdrivers",
       "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Screwdrivers/c/1593?q=%3Arelevance&page=0",
       "readySelector": ".row",
       "clickSelector": ".glyphicon-chevron-right",
@@ -224,7 +224,7 @@
       "requireSameDimensions": true
     },
     {
-      "label":"Remove Filter - Bosch x",
+      "label":"Remover Filtro - Bosch [x]",
       "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Sanders/c/1596?q=%3Arelevance%3Abrand%3Abrand_753",
       "readySelector": ".row",
       "clickSelector": ".glyphicon-remove",
@@ -273,7 +273,7 @@
       "requireSameDimensions": true
     },
     {
-      "label":"Login Para Checkout - Carrinho",
+      "label":"Login Para Checkout - Carrinho com produtos",
       "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/login/checkout",
       "readySelector": ".checkout-login",
       "keyPressSelectors":
@@ -306,7 +306,7 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Esconder elemento",
+      "label": "Esconder elementos",
       "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/",
       "readySelector": ".js-mainHeader",
       "hideSelectors": [".navigation--top", ".no-margin"],
