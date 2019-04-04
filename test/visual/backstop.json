@@ -145,7 +145,7 @@
       "requireSameDimensions": true
     },
     {
-        "label":"Recupear Senha",
+        "label":"Recuperar Senha",
       "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/login",
       "readySelector": ".js-mainHeader",
       "clickSelector": ".forgotten-password a",
