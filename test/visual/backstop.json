@@ -356,7 +356,7 @@
       "url": "https://powertools.local:9002/yb2bacceleratorstorefront/",
       "selectors": [".footer__nav--links li"],
       "selectorExpansion": true,
-      "expect": 4,
+      "expect": 8,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
     }
