@@ -34,6 +34,7 @@
       "url": "https://powertools.local:9002/yb2bacceleratorstorefront/",
       "readySelector": ".navigation__overflow",
       "clickSelector": ".nav__links--primary a",
+      "postInteractionWait": ".nav__links--primary a",
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
     },
@@ -42,6 +43,7 @@
       "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Power-Drills/c/1360",
       "readySelector": ".navigation__overflow",
       "clickSelector": ".js-more-facet-values-link",
+      "postInteractionWait": ".js-more-facet-values-link",
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
     },
@@ -50,6 +52,7 @@
       "url": "https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/Open-Catalogue/Tools/Power-Drills/c/1360",
       "readySelector": ".navigation__overflow",
       "clickSelector": ".facet__list__mark",
+      "postInteractionWait": ".facet__list__mark",
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
     },
@@ -142,7 +145,7 @@
       "requireSameDimensions": true
     },
     {
-      "label":"Recuperar Senha",
+        "label":"Recuperar Senha",
       "url":"https://powertools.local:9002/yb2bacceleratorstorefront/powertools/en/USD/login",
       "readySelector": ".js-mainHeader",
       "clickSelector": ".forgotten-password a",
@@ -334,15 +337,33 @@
           "keyPress": "123123"
         }
       ],
-      "delay": 2000,
       "clickSelector": ".btn-block",
+      "delay": 1500,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Contagem de Elementos - Navbar",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/",
+      "selectors": [".nav__links--primary"],
+      "selectorExpansion": true,
+      "expect": 7,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Contagem de Elementos - Footer",
+      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/",
+      "selectors": [".footer__nav--links li"],
+      "selectorExpansion": true,
+      "expect": 4,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
     }
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
-    "bitmaps_test": "backstop_data/bitmaps_test",
+    "bitmaps_test": "bacXSkstop_data/bitmaps_test",
     "engine_scripts": "backstop_data/engine_scripts",
     "html_report": "backstop_data/html_report",
     "ci_report": "backstop_data/ci_report"
