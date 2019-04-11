@@ -338,7 +338,7 @@
         }
       ],
       "clickSelector": ".btn-block",
-      "delay": 1500,
+      "delay": 2000,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
     },
