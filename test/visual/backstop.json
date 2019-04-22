@@ -359,31 +359,6 @@
       "expect": 8,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
-    },
-    {
-      "label": "Contagem de Elementos - Banners",
-      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/",
-      "selectors": [".owl-wrapper-outer"],
-      "selectorExpansion": true,
-      "expect": 3,
-      "misMatchThreshold" : 0.1,
-      "requireSameDimensions": true
-    },
-    {
-      "label": "print - dropdown button own principal - English",
-      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/",
-      "selectors": ["#lang-selector"],
-      "misMatchThreshold" : 0.1,
-      "requireSameDimensions": true
-    },
-    {
-      "label": "nav__right - elementos navbar topo Direito (find a store/order forms/cart)",
-      "url": "https://powertools.local:9002/yb2bacceleratorstorefront/",
-      "selectors": [".nav__links--shop_info li"],
-      "selectorExpansion": true,
-      "expect": 2,
-      "misMatchThreshold" : 0.1,
-      "requireSameDimensions": true
     }
   ],
   "paths": {
