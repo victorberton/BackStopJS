@@ -9,6 +9,11 @@
       "label": "tablet",
       "width": 1024,
       "height": 768
+    },
+    {
+      "label": "mobile",
+      "width": 640,
+      "height": 360
     }
   ],
   "onBeforeScript": "chromy/onBefore.js",
@@ -17,6 +22,7 @@
     {
      "label": "C&C - Homepage",
      "url": "https://cec-b2b.cyid87hk5m-ceccasaec1-d1-public.model-t.cc.commerce.ondemand.com/pt/",
+     "delay": 200,
      "readySelector": ".page-homepage",
      "misMatchThreshold" : 0.1,
      "requireSameDimensions": true
@@ -44,10 +50,62 @@
    {
     "label": "C&C - PDP",
     "url": "https://cec-b2b.cyid87hk5m-ceccasaec1-d1-public.model-t.cc.commerce.ondemand.com/pt/c/asdasd/p/000000000004",
-    "readySelector": ".page-productDetails  ",
+    "readySelector": ".page-productDetails",
     "misMatchThreshold" : 0.1,
     "requireSameDimensions": true
-   }
+   },
+   {
+    "label": "C&C - Login",
+    "url": "https://cec-b2b.cyid87hk5m-ceccasaec1-d1-public.model-t.cc.commerce.ondemand.com/pt/login",
+    "readySelector": "#loginForm",
+    "misMatchThreshold" : 0.1,
+    "requireSameDimensions": true
+   },
+   {
+    "label":"C&C - Login Falha",
+    "cookiePath": "backstop_data/engine_scripts/cookies.json",
+    "url":"https://cec-b2b.cyid87hk5m-ceccasaec1-d1-public.model-t.cc.commerce.ondemand.com/pt/login",
+    "readySelector": "#loginForm",
+    "keyPressSelectors":
+    [
+      {
+        "selector": "#j_username",
+        "keyPress": "falha"
+      },
+      {
+        "selector": "#j_password",
+        "keyPress": "falha"
+      }
+    ],
+    "clickSelector": ".btn-block",
+    "misMatchThreshold" : 0.1,
+    "requireSameDimensions": true
+  },
+   {
+    "label": "C&C - Login - Forgot Password",
+    "url": "https://cec-b2b.cyid87hk5m-ceccasaec1-d1-public.model-t.cc.commerce.ondemand.com/pt/login",
+    "readySelector": ".page-login",
+    "clickSelector": ".js-password-forgotten",
+
+    "misMatchThreshold" : 0.1,
+    "requireSameDimensions": true
+   },
+    {
+     "label": "C&C - Carrinho",
+     "url": "https://cec-b2b.cyid87hk5m-ceccasaec1-d1-public.model-t.cc.commerce.ondemand.com/pt/",
+     "readySelector": ".page-homepage",
+     "clickSelector": ".mini-cart-count",
+     "misMatchThreshold" : 0.1,
+     "requireSameDimensions": true
+    },
+     {
+      "label": "C&C - Banner Principal",
+      "url": "https://cec-b2b.cyid87hk5m-ceccasaec1-d1-public.model-t.cc.commerce.ondemand.com/pt/",
+      "readySelector": ".page-homepage",
+      "selectors": [".js-responsive-image"],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    }
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
